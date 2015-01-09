@@ -1,3 +1,4 @@
 class List < ActiveRecord::Base
-  # Remember to create a migration!
+  has_many :tasks
+  validates_presence_of :title
 end
